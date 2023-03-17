@@ -4,7 +4,7 @@ import os
 import pandas as pd
 import scipy.misc
 import utils
-from IPython.display import display
+# from IPython.display import display
 from PIL import Image
 from scipy import integrate
 from scipy import misc

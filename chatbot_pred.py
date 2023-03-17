@@ -1,5 +1,5 @@
 import argparse
-import cv2
+# import cv2
 import json
 import numpy as np
 import os
@@ -36,10 +36,10 @@ NUM_CLASSES = 185
 USE_CUDA = torch.cuda.is_available()
 best_prec1 = 0
 saved_model = "model_best.pth.tar"
-testdir = 'dataset_all/leafsnap/dataset/testit'
+testdir = 'dataset_all/leafsnap/dataset/test'
 pic_url="https://plantmaster.com/PlantMaster/FullSize/24943f.jpg?v=20180726-031701"
 
-def download_image(pic_url, image_loc = 'dataset_all/leafsnap/dataset/testit/unknown/example.jpg'):
+def download_image(pic_url, image_loc = 'dataset_all/leafsnap/dataset/test/unknown/example.jpg'):
 
     with open(image_loc, 'wb') as handle:
         response = requests.get(pic_url, stream=True)

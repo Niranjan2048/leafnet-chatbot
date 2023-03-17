@@ -1,2 +1,9 @@
 dataset_all
 __pycache__
+/dataset_all/leafsnap
+Lib
+/models
+/Scripts
+/Include
+/share
+/venv
